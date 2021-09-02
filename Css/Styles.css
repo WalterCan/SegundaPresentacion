@@ -1,0 +1,16 @@
+/* Reiniciamos el tamaño */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+/* Hace que los rem sean mas facil de usar 1 rem = 10px, con la ventaja de que el rem se va a adaptar mucho mejor */
+/* va a permitir que cuaquier proyecto se pueda adaptar a cualquier dispositivo */
+.titulo {
+  text-align: center;
+  font-size: 3.8rem;
+}
+.titulo span {
+  font-size: 2rem;
+}
