@@ -29,7 +29,7 @@ body {
 /* Barra de navegación  */
 
 .contenedor {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .nav-bg {
@@ -39,10 +39,17 @@ body {
   padding: 1rem;
   /* Habilitamos las propiedades de FLEXBOX */
   display: flex;
-  /* Hace que el primer y ultimo elemento se vayan a las esquinas y los restantes se acomodan con el mismo ancho del contenedor  */
-  justify-content: space-between;
+  flex-direction: column;
+}
+@media (min-width: 480px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between; /* Hace que el primer y ultimo elemento se vayan a las esquinas y los restantes se acomodan con el mismo ancho entre ellos   */
+  }
 }
 .navegacion-principal a {
+  display: block; /* Cuando la pantalla se vuelva más pequeña va a hacer que los elementos se alinien en forma de bloque para poder centrarlos luego */
+  text-align: center;
   color: var(--blanco);
   text-decoration: none;
   font-size: 2rem;
@@ -53,4 +60,8 @@ body {
 .navegacion-principal a:hover {
   background-color: var(--blanco);
   color: var(--oscuro);
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
 }
