@@ -13,6 +13,7 @@ html {
 }
 body {
   font-size: 16px;
+  font-family: "Krub", sans-serif;
 }
 /* Hace que los rem sean mas facil de usar 1 rem = 10px, con la ventaja de que el rem se va a adaptar mucho mejor */
 /* va a permitir que cuaquier proyecto se pueda adaptar a cualquier dispositivo */
@@ -23,4 +24,33 @@ body {
 }
 .titulo span {
   font-size: 2rem;
+}
+
+/* Barra de navegación  */
+
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
+}
+.nav-bg {
+  background-color: var(--oscuro);
+}
+.navegacion-principal {
+  padding: 1rem;
+  /* Habilitamos las propiedades de FLEXBOX */
+  display: flex;
+  /* Hace que el primer y ultimo elemento se vayan a las esquinas y los restantes se acomodan con el mismo ancho del contenedor  */
+  justify-content: space-between;
+}
+.navegacion-principal a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+/* Eventos de CSS o Pseudo Clases */
+.navegacion-principal a:hover {
+  background-color: var(--blanco);
+  color: var(--oscuro);
 }

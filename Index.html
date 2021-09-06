@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preload" href="/Css/normalize.css" as="style" />
     <link rel="stylesheet" href="/Css/normalize.css" />
     <link rel="preload" href="/Css/Styles.css" as="style" />
@@ -11,17 +15,22 @@
     <title>FreeLancer</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <h1 class="titulo">Walter Cantero <span>FreeLancer</span></h1>
     </header>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Nosotros</a>
-      <a href="#">Clientes</a>
-      <a href="#">Contactos</a>
-    </nav>
+    <!-- Barra de Navegación -->
+    <div class="nav-bg">
+      <!-- div para que background del nav se extienda hasta las orillas pero el contenido quede centrado   -->
+      <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contactos</a>
+      </nav>
+    </div>
     <section>
-      <h2 class="titulo">Diseño y Desarrollo Web Free</h2>
+      <h2 class="titulo">Diseño y Desarrollo Web FreeLancer</h2>
       <!-- REGLA: si el primer elemento Hijo de la etiqueta que usamos para agrupar es un heading, hay que utilizar Section. Excepto que sea el contenido principal   -->
       <p>
         <svg
