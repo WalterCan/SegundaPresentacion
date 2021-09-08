@@ -10,6 +10,12 @@
 /* Reiniciamos el tamaño */
 html {
   font-size: 62.5%;
+  box-sizing: border-box; /* Box sizing */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* Box sizing */
 }
 body {
   font-size: 16px;
@@ -62,7 +68,9 @@ body {
   color: var(--oscuro);
 }
 .hero {
-  background-image: url(../img/Banner.jpg);
+  background-image: url(../img/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50rem;
+  padding: 20px;
 }
