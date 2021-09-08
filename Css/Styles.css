@@ -61,7 +61,8 @@ body {
   background-color: var(--blanco);
   color: var(--oscuro);
 }
-@media (min-width: 480px) {
-}
-@media (min-width: 768px) {
+.hero {
+  background-image: url(../img/Banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
