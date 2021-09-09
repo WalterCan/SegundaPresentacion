@@ -101,11 +101,12 @@ h3 {
   background-color: var(--blanco);
   color: var(--oscuro);
 }
+/* Dando estilo a imagen del header  */
 .hero {
   background-image: url(../img/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50rem;
+  height: 60rem;
   /* padding: 20px; */
   position: relative;
 }
