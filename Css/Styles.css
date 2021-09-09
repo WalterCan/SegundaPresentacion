@@ -5,6 +5,7 @@
   --primario: #ffc107;
   --secundario: #0097a7;
   --gris: #757575;
+  --grisClaro: #dfe9f3;
 }
 
 /* Reiniciamos el tamaño */
@@ -20,6 +21,11 @@ html {
 body {
   font-size: 16px;
   font-family: "Krub", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    var(--grisClaro) 0%,
+    var(--blanco) 100%
+  );
 }
 /* Hace que los rem sean mas facil de usar 1 rem = 10px, con la ventaja de que el rem se va a adaptar mucho mejor */
 /* va a permitir que cuaquier proyecto se pueda adaptar a cualquier dispositivo */
