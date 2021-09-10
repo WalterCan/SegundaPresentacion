@@ -173,3 +173,11 @@ h3 {
   align-items: center;
   /* -- */
 }
+/* Formulario de Contacto */
+.formulario {
+  background-color: var(--gris);
+  width: min(60rem, 100%); /*Toma el valor más pequeño*/
+}
+.formulario fieldset {
+  border: none;
+}
