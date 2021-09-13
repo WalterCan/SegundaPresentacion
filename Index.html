@@ -185,25 +185,29 @@
       <!-- Comienza formulario -->
       <section>
         <h2>Contacto</h2>
-        <form class="formulario contenedor">
+        <form class="formulario">
           <fieldset>
             <legend>Contáctame Llenando todos los campos</legend>
-            <div>
-              <label>Nombre</label>
-              <input type="text" placeholder="Tu Nombre" />
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu Nombre" />
+              </div>
+              <div class="campo">
+                <label>Teléfono</label>
+                <input type="tel" placeholder="Teléfono" />
+              </div>
+              <div class="campo">
+                <label>Correo</label>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div lass="campo">
+                <label>Mensaje</label>
+                <textarea></textarea>
+              </div>
             </div>
-            <div>
-              <label>Teléfono</label>
-              <input type="tel" placeholder="Teléfono" />
-            </div>
-            <div>
-              <label>Correo</label>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div>
-              <label>Mensaje</label>
-              <textarea></textarea>
-            </div>
+            <!-- contenedor de los campos -->
+
             <div>
               <input type="submit" value="Enviar" />
             </div>

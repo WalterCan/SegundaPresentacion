@@ -176,8 +176,23 @@ h3 {
 /* Formulario de Contacto */
 .formulario {
   background-color: var(--gris);
-  width: min(60rem, 100%); /*Toma el valor más pequeño*/
+  width: min(
+    60rem,
+    100%
+  ); /*Toma el valor más pequeño, con esto evitamos media querie */
+  margin: 0 auto;
+  /* Utilizamos el margin:0 auto, cuando el elemento padre no tiene display:flex. Éste tiene un display block por default. Lo utilizamos generalmente cuando tenemos formularios o sea elemento de tipo block  */
+  border-radius: 1rem;
+  padding: 2rem;
 }
 .formulario fieldset {
   border: none;
+}
+.formulario legend {
+  color: var(--primario);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
