@@ -12,11 +12,19 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; /* Box sizing */
+  scroll-snap-type: y mandatory;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit; /* Box sizing */
+}
+/* Scroll snap */
+.servicios,
+.navegacion-principal,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 body {
   font-size: 16px;
@@ -161,6 +169,7 @@ h3 {
   display: flex;
   align-items: flex-end;
 }
+
 /* Servicios con CSS Grid */
 @media (min-width: 768px) {
   .servicios {
