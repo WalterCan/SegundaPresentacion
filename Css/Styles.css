@@ -250,4 +250,6 @@ h3 {
 /* Footer */
 .footer {
   text-align: center;
+  color: var(--oscuro);
+  font-weight: bold;
 }
